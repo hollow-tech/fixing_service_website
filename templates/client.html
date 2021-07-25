@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Отправить заявку{% endblock %}
+{% block content %}
+<div><h3>Получите выезд мастера и диагностику вашей техники
+    БЕСПЛАТНО</h3>
+    Мы перезвоним в течении 5 минут, чтобы согласовать удобное вам время визита.
+</div>
+<form  method="post" action="" >
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-success" name="send">Отправить заявку</button>
+</form>
+{% endblock %}

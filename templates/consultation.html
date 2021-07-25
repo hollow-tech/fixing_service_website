@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div>
+
+    <h3>ЗАКАЖИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ И УЗНАЙТЕ ПРИМЕРНУЮ СТОИМОСТЬ РЕМОНТА.</h3>
+    Мы перезвоним в течении 5 минут, узнаем, что не так с вашей техникой и назовем примерную стоимость ремонта.
+
+    </div>
+
+    <form  method="post" action="" >
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-success" name="send" >Узнать стоимость ремонта</button>
+    </form>
+
+{% endblock %}

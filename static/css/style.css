@@ -1,0 +1,81 @@
+
+table {
+    width: 400px;
+
+}
+
+ul {
+    list-style-type:none;
+}
+
+table, th, td {
+   border-collapse: separate;
+   border-spacing: 0 15px;
+   text-align: center;
+}
+
+th, td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+  background-color: #4287f5;
+  color: white;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+
+}
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+.intro_text {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: 'Raleway', cursive;
+  font-weight: 100;
+  position: relative;
+  background: -webkit-linear-gradient(left, black, #eee, black);
+  background: -moz-linear-gradient(left, black, #eee, black);
+  background: -ms-linear-gradient(left, black, #eee, black);
+  background: -o-linear-gradient(left, black, #eee, black);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+}
+
+
